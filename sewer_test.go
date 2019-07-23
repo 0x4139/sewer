@@ -14,11 +14,11 @@ func TestSewer_SubscribeAndPublish(t *testing.T) {
 
 	p, err := sewer.Publisher()
 	if err != nil {
-		t.Fatalf("Error occured creating publisher: %s", err.Error())
+		t.Fatalf("Error occurred creating publisher: %s", err.Error())
 	}
 	s, err := sewer.Subscriber()
 	if err != nil {
-		t.Fatalf("Error occured creating subscriber: %s", err.Error())
+		t.Fatalf("Error occurred creating subscriber: %s", err.Error())
 	}
 	go func() {
 		for i := 0; i < 3; i++ {
