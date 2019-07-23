@@ -33,7 +33,7 @@ func TestSewer_SubscribeAndPublish(t *testing.T) {
 			println(fmt.Sprintf("DATA: %s", data))
 
 		case err := <-sewer.ErrorChannel():
-			t.Fatalf("Error occured: %s", err.Error())
+			t.Fatalf("Error occurred: %s", err.Error())
 
 		case <-sewer.stopChannel:
 			return

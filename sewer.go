@@ -13,7 +13,7 @@ type Sewer struct {
 	Name             string
 }
 
-func New(name, connectionString string) ( *Sewer) {
+func New(name, connectionString string) *Sewer {
 	return &Sewer{
 		Name:             name,
 		connectionString: connectionString,
